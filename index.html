@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Snake</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1><span>Snake</span></h1>
+  <p>Arrow keys or WASD to steer. Eat the pink squares, don’t hit the walls or yourself.</p>
+  <div class="game">
+    <canvas id="board" width="360" height="360"></canvas>
+    <div class="side">
+      <div>Score: <b id="score">0</b></div>
+      <div>Best: <b id="best">0</b></div>
+      <button id="start">Start</button>
+      <div class="pad">
+        <button class="sec u" data-d="0,-1" aria-label="Up">▲</button>
+        <button class="sec" data-d="-1,0" aria-label="Left">◀</button>
+        <button class="sec" data-d="0,1" aria-label="Down">▼</button>
+        <button class="sec" data-d="1,0" aria-label="Right">▶</button>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
